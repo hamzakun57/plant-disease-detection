@@ -1,0 +1,62 @@
+# ============================================
+# Secrets / variables d'environnement
+# ============================================
+.env
+.env.*
+!.env.example
+
+# ============================================
+# Données ML & modèles (trop lourds pour Git)
+# ============================================
+# Dataset d'images (~530 Mo, 35 725 fichiers)
+backend/data/
+# Poids du modèle (MobileNetV2 ~100 Mo)
+backend/ml_model/*.h5
+backend/ml_model/*.keras
+backend/ml_model/*.ckpt
+backend/ml_model/*.tflite
+# Sorties d'entraînement / métriques
+backend/logs/
+logs/
+*.log
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+*.egg
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ============================================
+# Node
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+dist-ssr/
+build/
+
+# ============================================
+# Environnements IDE / éditeurs
+# ============================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+
+# ============================================
+# Système d'exploitation
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
